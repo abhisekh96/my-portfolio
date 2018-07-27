@@ -59,7 +59,11 @@
       background-position: center;
       border-radius: 50%;
       border: solid 3px #eece1a;
-      opacity: 1; }
+      opacity: 1;
+      transform: translate3d(0, 600px, 0);
+      transition: all 0.5s ease-out; }
+      .menu-branding .portrait.show {
+        transform: translate3d(0, 0, 0); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -91,38 +95,6 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
-
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-  .lg-heading {
-    line-height: 1;
-    margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/abhisek_portrait_small.jpg");
-      height: 150px;
-      width: 150px;
-      background-position: center; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }
@@ -158,8 +130,7 @@ h2 {
   h1.sm-heading,
   h2.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -175,11 +146,12 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 1rem; }
+      padding: 1rem;
+      color: #fff; }
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -187,3 +159,72 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #eece1a 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+
+#main-footer {
+  text-align: center;
+  height: 60px;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 76vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+    .menu-nav .nav-item {
+      transform: translate3d(-100%, 0, 0); }
+      .menu-nav .nav-item.show {
+        transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    height: 24vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/abhisek_portrait_small.jpg");
+      height: 150px;
+      width: 150px;
+      background-position: center;
+      transform: translate3d(100%, 0, 0); }
+      .menu-branding .portrait.show {
+        transform: translate3d(0, 0, 0); }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }

@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -95,6 +95,11 @@
       border-radius: 50%;
       border: solid 3px $secondary-color;
       opacity: 1;
+      transform: translate3d(0, 600px, 0);
+      @include easeOut();
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
       //background: rgba(255, 255, 255, 1);
     }
   }
@@ -119,7 +124,7 @@
     font-weight: 300;
     text-transform: uppercase;
     padding: 1rem 0;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut();
 
