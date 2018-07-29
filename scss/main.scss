@@ -48,7 +48,7 @@ main {
   padding: 3rem;
   padding-bottom: 1rem;
   // height: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 40px);
 
   .icons {
     margin-top: 1rem;
@@ -76,13 +76,13 @@ main {
 #about {
   h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 100;
   }
 
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 100;
   }
 
@@ -137,7 +137,7 @@ main {
 
   .job {
     background: lighten($color: $primary-color, $amount: 5);
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     border-bottom: $secondary-color 5px solid;
   }
 
@@ -316,8 +316,8 @@ main {
 
 #main-footer {
   text-align: center;
-  height: 60px;
-  padding: 1rem;
+  height: 30px;
+  // padding: 1rem;
   // background: darken($color: $primary-color, $amount: 10);
   color: set-text-color($primary-color);
   // opacity: 0.9;
