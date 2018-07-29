@@ -1,97 +1,96 @@
 // Widescreens
 @include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  // .projects {
+  //   grid-template-columns: repeat(4, 1fr);
+  // }
 }
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  // .projects {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
+  // main {
+  //   align-items: center;
+  //   text-align: center;
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
-  }
+  //   .lg-heading {
+  //     line-height: 1;
+  //     margin-bottom: 1rem;
+  //   }
+  // }
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
+  // ul.menu-nav,
+  // div.menu-branding {
+  //   float: none;
+  //   width: 100%;
+  //   min-height: 0;
 
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   &.show {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
+  // .menu-nav {
+  //   height: 75vh;
+  //   transform: translate3d(-100%, 0, 0);
+  //   font-size: 24px;
+  // }
 
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
+  // .menu-branding {
+  //   height: 25vh;
+  //   transform: translate3d(100%, 0, 0);
 
-    .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px;
-    }
-  }
+  //   .portrait {
+  //     background: url("../img/portrait_small.jpg");
+  //     width: 150px;
+  //     height: 150px;
+  //   }
+  // }
 
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
+  // .about-info {
+  //   grid-template-areas:
+  //     "bioimage"
+  //     "bio"
+  //     "job1"
+  //     "job2"
+  //     "job3";
 
-    grid-template-columns: 1fr;
-  }
+  //   grid-template-columns: 1fr;
+  // }
 
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  // .projects {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
 }
 
 // Smartphones
 @include mediaSm {
-  // main#home h1 {
-  //   margin-top: 10vh;
-  // }
+  main {
+    align-items: center;
+    text-align: center;
+  }
 
-  // .projects {
-  //   grid-template-columns: 1fr;
-  // }
-
-  //Home Page
   #home {
     h1 {
-      font-size: 2.9rem;
+      font-size: 2.5rem;
     }
+
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
+
     a {
-      padding: 0.4rem;
-      font-size: 0.9rem;
-    }
-    .noHover {
-      pointer-events: none;
+      font-size: 0.8rem;
+      padding: 0.3rem;
+
+      &:hover {
+        color: set-text-color($primary-color);
+      }
     }
   }
 }

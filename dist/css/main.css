@@ -354,53 +354,16 @@ main {
   font-weight: 100;
   color: #fff; }
 
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
   #home h1 {
-    font-size: 2.9rem; }
+    font-size: 2.5rem; }
   #home h2 {
-    font-size: 1.3rem; }
+    font-size: 1.15rem; }
   #home a {
-    padding: 0.4rem;
-    font-size: 0.9rem; }
-  #home .noHover {
-    pointer-events: none; } }
+    font-size: 0.8rem;
+    padding: 0.3rem; }
+    #home a:hover {
+      color: #fff; } }
