@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -74,9 +74,8 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 100;
     padding: 1rem 0;
     color: #fff;
     text-decoration: none;
@@ -127,10 +126,6 @@ h2 {
   h1.lg-heading,
   h2.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -145,12 +140,13 @@ header {
   color: #eece1a; }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
+  padding-bottom: 1rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 1rem;
+      padding: 0.8rem;
       color: #fff; }
       main .icons a:hover {
         color: #eece1a;
@@ -160,34 +156,121 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
+#about h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 100; }
+
+#about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 100; }
+
+#about h3 {
+  text-align: center; }
+
+#about .bio-heading {
+  text-align: left; }
+
+#about .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+  #about .container1 .bio-image {
+    height: 150px;
+    width: 150px;
+    background: url("../img/abhisek_portrait_small.jpg");
+    background-position: center;
+    border-radius: 50%;
+    border: solid 3px #eece1a;
+    opacity: 1;
+    margin-left: 6.4rem; }
+
+#about .container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 0; }
+  #about .container2 .container2box {
+    flex-basis: 30%; }
+
+#about .job {
+  background: #515151;
+  padding: 0.5rem 1rem;
+  border-bottom: #eece1a 5px solid; }
+
+#about h3 {
+  color: #eece1a;
+  font-weight: 100; }
+
+#about .box1 {
+  flex-basis: 35%; }
+
+#about .box2 {
+  flex-basis: 65%; }
+
+#about #list {
+  list-style-type: none;
+  padding: 0 1rem;
+  padding-bottom: 0; }
+
+/* .about-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  .bio-image {
+    // grid-area: bioimage;
+    // height: 250px;
+    // width: 250px;
+    background-position: center;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
-  .about-info .bio {
+    border: solid 3px $secondary-color;
+  }
+
+  .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
+    font-size: 1.5rem;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($color: $primary-color, $amount: 5);
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: $secondary-color 5px solid;
+  }
+} */
+#work h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 100; }
+
+#work h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 100; }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem; }
+  grid-gap: 2rem; }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
@@ -196,6 +279,19 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+#contact h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 100; }
+
+#contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 100; }
+
+#contact i {
+  color: #eece1a; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -203,10 +299,10 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     border: 3px solid #fff;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -214,15 +310,21 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+      .boxes div:hover #map {
+        color: #000; }
+  .boxes .permanent-address {
+    flex-basis: 100%;
+    margin-bottom: 1rem; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background-color: #eece1a;
-    color: #fff; }
+    color: #000; }
 
 .btn-dark {
   background: black;
@@ -236,7 +338,6 @@ main {
   text-align: center;
   height: 60px;
   padding: 1rem;
-  background: #2b2b2b;
   color: #fff; }
 
 @media screen and (min-width: 1171px) {
