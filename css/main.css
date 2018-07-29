@@ -142,7 +142,7 @@ header {
 main {
   padding: 3rem;
   padding-bottom: 1rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 40px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -158,12 +158,12 @@ main {
 
 #about h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 100; }
 
 #about h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 100; }
 
 #about h3 {
@@ -199,7 +199,7 @@ main {
 
 #about .job {
   background: #515151;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   border-bottom: #eece1a 5px solid; }
 
 #about h3 {
@@ -336,8 +336,7 @@ main {
 
 #main-footer {
   text-align: center;
-  height: 60px;
-  padding: 1rem;
+  height: 30px;
   color: #fff; }
 
 @media screen and (min-width: 1171px) {
