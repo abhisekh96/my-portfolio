@@ -70,11 +70,28 @@
 
 // Smartphones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
-  }
+  // main#home h1 {
+  //   margin-top: 10vh;
+  // }
 
-  .projects {
-    grid-template-columns: 1fr;
+  // .projects {
+  //   grid-template-columns: 1fr;
+  // }
+
+  //Home Page
+  #home {
+    h1 {
+      font-size: 2.9rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+    a {
+      padding: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .noHover {
+      pointer-events: none;
+    }
   }
 }
