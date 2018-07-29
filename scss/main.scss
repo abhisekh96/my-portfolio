@@ -24,8 +24,7 @@ h2 {
     font-size: 6rem;
   }
   &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    // margin-bottom: 2rem;
     //background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
   }
 }
@@ -46,7 +45,8 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
+  padding-bottom: 1rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
 
@@ -54,7 +54,7 @@ main {
     margin-top: 1rem;
 
     a {
-      padding: 1rem;
+      padding: 0.8rem;
       color: set-text-color($primary-color);
 
       &:hover {
@@ -72,19 +72,114 @@ main {
   }
 }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+// About Page
+#about {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .bio-heading {
+    text-align: left;
+  }
+
+  // .about-margin {
+  //   margin: 2rem;
+  // }
+
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .bio-image {
+      height: 150px;
+      width: 150px;
+      background: url("../img/abhisek_portrait_small.jpg");
+      background-position: center;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+      opacity: 1;
+      margin-left: 6.4rem;
+      // text-align: center;
+      // margin-left: 50px;
+      // justify-content: center;
+
+      //background: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 0;
+
+    .container2box {
+      flex-basis: 30%;
+    }
+  }
+
+  .job {
+    background: lighten($color: $primary-color, $amount: 5);
+    padding: 0.5rem 1rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+
+  h3 {
+    color: #eece1a;
+    font-weight: 100;
+  }
+
+  .box1 {
+    // flex: 1;
+    flex-basis: 35%;
+    // justify-content: center;
+  }
+
+  .box2 {
+    // flex: 2;
+    flex-basis: 65%;
+  }
+
+  #list {
+    list-style-type: none;
+    padding: 0 1rem;
+    padding-bottom: 0;
+  }
+}
+//------------------------------------
+
+/* .about-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
 
   .bio-image {
-    grid-area: bioimage;
+    // grid-area: bioimage;
+    // height: 250px;
+    // width: 250px;
+    background-position: center;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: solid 3px $secondary-color;
   }
 
   .bio {
@@ -109,13 +204,26 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
-}
+} */
 
 // Work/Projects
+#work {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 
   img {
     width: 100%;
@@ -129,7 +237,24 @@ main {
   }
 }
 
-// Cotact Page
+// Contact Page
+#contact {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+
+  i {
+    color: #eece1a;
+  }
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -138,10 +263,10 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     border: 3px solid #fff;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     @include easeOut();
 
     &:hover {
@@ -151,7 +276,15 @@ main {
       span {
         color: set-text-color($secondary-color);
       }
+      #map {
+        color: #000;
+      }
     }
+  }
+
+  .permanent-address {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -161,10 +294,11 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
 
   &:hover {
     background-color: $secondary-color;
-    color: set-text-color($primary-color);
+    color: set-text-color($secondary-color);
   }
 }
 
@@ -184,8 +318,9 @@ main {
   text-align: center;
   height: 60px;
   padding: 1rem;
-  background: darken($color: $primary-color, $amount: 10);
+  // background: darken($color: $primary-color, $amount: 10);
   color: set-text-color($primary-color);
+  // opacity: 0.9;
 }
 
 @import "mobile";
