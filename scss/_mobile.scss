@@ -73,16 +73,22 @@
   main {
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
   }
 
+  h1 {
+    padding-top: 5vh;
+  }
+
+  // Home Page
   #home {
     h1 {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       font-weight: bold;
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
 
@@ -92,6 +98,100 @@
 
       &:hover {
         color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Me Page
+  .about-body {
+    line-height: 1.5;
+
+    #main-footer {
+      font-weight: 400;
+    }
+  }
+
+  #about {
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .container1 {
+      margin-bottom: 0.5rem;
+
+      .box1 {
+        flex-basis: 100%;
+        justify-content: center;
+
+        .bio-image {
+          // justify-content: center;
+          margin: auto;
+        }
+      }
+
+      .box2 {
+        flex-basis: 100%;
+        padding: 1rem;
+
+        .bio-heading {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+
+        .bio-paragraph {
+          text-align: left;
+          font-weight: 400;
+          // margin-top: 0;
+          font-size: 1rem;
+          // padding-top: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .container2 {
+      justify-content: center;
+      align-items: center;
+
+      .container2box {
+        flex-basis: 100%;
+      }
+
+      .job {
+        // margin-bottom: 1rem;
+        // padding-bottom: 1rem;
+        // padding: 0;
+        border-bottom: none;
+        background: none;
+
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: left;
+          // padding: 0;
+          // margin: 0;
+        }
+      }
+
+      #list {
+        padding: 0;
       }
     }
   }
