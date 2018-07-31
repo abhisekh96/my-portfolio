@@ -74,6 +74,11 @@
     align-items: center;
     text-align: center;
     padding: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  #main-footer {
+    height: 30px;
   }
 
   h1 {
@@ -115,7 +120,7 @@
     h1 {
       font-weight: bold;
       font-size: 3rem;
-      margin-top: 1rem;
+      // margin-top: 1rem;
       margin-bottom: 0;
     }
 
@@ -125,7 +130,7 @@
     }
 
     .container1 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0rem;
 
       .box1 {
         flex-basis: 100%;
@@ -134,18 +139,23 @@
         .bio-image {
           // justify-content: center;
           margin: auto;
+          background: url("../img/abhisek_portrait_small.jpg");
+          background-position: center;
         }
       }
 
       .box2 {
         flex-basis: 100%;
         padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
 
         .bio-heading {
           text-align: center;
           font-weight: bold;
           font-size: 1.5rem;
           margin-bottom: 0;
+          margin-top: 1rem;
         }
 
         .bio-paragraph {
@@ -155,6 +165,8 @@
           font-size: 1rem;
           // padding-top: 0;
           padding: 0;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
         }
       }
     }
@@ -179,6 +191,7 @@
           font-weight: bold;
           font-size: 1.5rem;
           margin-bottom: 0;
+          margin-top: 0;
         }
 
         li {

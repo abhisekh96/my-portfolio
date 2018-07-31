@@ -358,7 +358,10 @@ main {
   main {
     align-items: center;
     text-align: center;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    padding-bottom: 0; }
+  #main-footer {
+    height: 30px; }
   h1 {
     padding-top: 5vh; }
   #home h1 {
@@ -379,31 +382,37 @@ main {
   #about h1 {
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 1rem;
     margin-bottom: 0; }
   #about h2 {
     font-weight: bold;
     font-size: 1.4rem; }
   #about .container1 {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0rem; }
     #about .container1 .box1 {
       flex-basis: 100%;
       justify-content: center; }
       #about .container1 .box1 .bio-image {
-        margin: auto; }
+        margin: auto;
+        background: url("../img/abhisek_portrait_small.jpg");
+        background-position: center; }
     #about .container1 .box2 {
       flex-basis: 100%;
-      padding: 1rem; }
+      padding: 1rem;
+      padding-top: 0;
+      padding-bottom: 0; }
       #about .container1 .box2 .bio-heading {
         text-align: center;
         font-weight: bold;
         font-size: 1.5rem;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        margin-top: 1rem; }
       #about .container1 .box2 .bio-paragraph {
         text-align: left;
         font-weight: 400;
         font-size: 1rem;
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 1rem;
+        margin-top: 1rem; }
   #about .container2 {
     justify-content: center;
     align-items: center; }
@@ -416,7 +425,8 @@ main {
         text-align: center;
         font-weight: bold;
         font-size: 1.5rem;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        margin-top: 0; }
       #about .container2 .job li {
         font-weight: 400;
         font-size: 1rem;
