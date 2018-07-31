@@ -78,11 +78,88 @@
   }
 
   #main-footer {
-    height: 30px;
+    // height: 30px;
+    height: 25px;
+    margin-bottom: 0.5rem;
   }
 
   h1 {
     padding-top: 5vh;
+  }
+
+  .item1 {
+    margin-top: 13vh;
+  }
+
+  // Menu Page
+  body {
+    header {
+      .menu-btn {
+      }
+
+      .menu {
+        .menu-branding {
+          float: none;
+          width: 100%;
+          min-height: 0;
+          height: 30vh;
+          transform: translate3d(100%, 0, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .portrait {
+            height: 150px;
+            width: 150px;
+            background: url("../img/abhisek_portrait_small.jpg");
+            background-position: center;
+            transform: translate3d(100%, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+
+        .menu-nav {
+          float: none;
+          width: 100%;
+          min-height: 0;
+          height: 70vh;
+          justify-content: flex-start;
+          // justify-content: center;
+          transform: translate3d(-100%, 0, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .nav-item {
+            // height: 1vh;
+            transform: translate3d(-100%, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+
+            .nav-link {
+              font-weight: bold;
+              padding: 0.5rem;
+              font-size: 1.5rem;
+
+              &:hover {
+                color: set-text-color($primary-color);
+              }
+            }
+
+            &.current > a:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
   }
 
   // Home Page
@@ -119,7 +196,7 @@
   #about {
     h1 {
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 2.5rem;
       // margin-top: 1rem;
       margin-bottom: 0;
     }
@@ -206,6 +283,123 @@
       #list {
         padding: 0;
       }
+    }
+  }
+
+  // My Work Page
+  .work-body {
+    line-height: 1.5;
+
+    #work {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+
+        .item {
+          a {
+            font-weight: normal;
+
+            img:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+
+          .btn-dark {
+            margin-bottom: 0;
+          }
+
+          .btn-light:hover {
+            background: lighten($color: $primary-color, $amount: 50);
+            color: #333;
+          }
+
+          .btn-dark:hover {
+            background: darken($primary-color, 50);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+
+  // Contact Me Page
+  .contact-body {
+    line-height: 1.5;
+
+    #contact {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .boxes {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+
+        div {
+          flex-basis: 100%;
+          font-weight: normal;
+          margin-bottom: 1rem;
+          // padding: 0.5rem 1rem;
+          padding: 0.4rem 0.9rem;
+          text-align: left;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+          }
+
+          &:hover {
+            margin-bottom: 1rem;
+            // padding: 0.5rem 1rem;
+            padding: 0.4rem 0.9rem;
+            background: none;
+            color: set-text-color($primary-color);
+            span {
+              color: $secondary-color;
+            }
+            #map {
+              color: #dd4a40;
+            }
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
     }
   }
 }
