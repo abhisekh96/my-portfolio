@@ -366,7 +366,7 @@ main {
   h1 {
     padding-top: 5vh; }
   .item1 {
-    margin-top: 13vh; }
+    margin-top: 14vh; }
   body header .menu .menu-branding {
     float: none;
     width: 100%;
@@ -425,7 +425,9 @@ main {
     margin-bottom: 0; }
   #about h2 {
     font-weight: bold;
-    font-size: 1.4rem; }
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    line-height: 1.2; }
   #about .container1 {
     margin-bottom: 0rem; }
     #about .container1 .box1 {
@@ -443,7 +445,7 @@ main {
       #about .container1 .box2 .bio-heading {
         text-align: center;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-bottom: 0;
         margin-top: 1rem; }
       #about .container1 .box2 .bio-paragraph {
@@ -464,7 +466,7 @@ main {
       #about .container2 .job h3 {
         text-align: center;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-bottom: 0;
         margin-top: 0; }
       #about .container2 .job li {
