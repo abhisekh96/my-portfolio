@@ -70,6 +70,77 @@
 
 // Smartphones
 @include mediaSm {
+  // My Experiment
+  .navbar {
+    // position: absolute; correct one, don't touch
+    z-index: 3; // comment this one
+    position: fixed; // absolute
+    // display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    font-size: 1rem;
+    // color: set-text-color($primary-color);
+    // background-color: #000000 !important;
+    background-color: #333;
+    // background: rgba(0, 0, 0, 0.8);
+
+    // opacity: 0.5;
+    // padding: 0.5rem 1rem;
+  }
+  // It ends here
+
+  .menu-btn {
+    top: 0;
+    right: 0;
+    display: block;
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border-bottom: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+
+    .line1 {
+      margin-top: 0; //19.5px
+      // top: 20vh;
+    }
+
+    .line2 {
+    }
+
+    .line3 {
+    }
+
+    &.close {
+      transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // margin: 0;
+        // transform: rotate(45deg) translate(6px, 5px);
+        transform: rotate(45deg) translate(48px, 48px);
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);
+        transform: rotate(-45deg) translate(-48px, -48px);
+      }
+    }
+
+    .btn-line {
+      display: block;
+      width: 17px;
+      height: 1px;
+      margin-right: 16px;
+      margin-left: 15px;
+      // margin-bottom: 2px;
+      // border-radius: 50%;
+      // position: fixed;
+    }
+  }
+
   main {
     align-items: center;
     text-align: center;
@@ -94,8 +165,8 @@
   // Menu Page
   body {
     header {
-      .menu-btn {
-      }
+      // .menu-btn {
+      // }
 
       .menu {
         .menu-branding {

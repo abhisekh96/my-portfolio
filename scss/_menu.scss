@@ -1,20 +1,11 @@
 //Menu Button
 .menu-btn {
   //Brad's code
-  position: absolute;
-  z-index: 3;
+  position: fixed;
+  z-index: 3; //3
   right: 35px;
   top: 35px;
   //Ends here
-
-  //My Experiment
-  // color: set-text-colo($primary-color);
-  // background-color: #343a40 !important;
-  // It ends here
-
-  // Bootstrap experiment
-
-  // It ends here
   cursor: pointer;
   @include easeOut();
 

@@ -1,5 +1,5 @@
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -130,11 +130,6 @@ h2 {
 a {
   color: #fff;
   text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
 
 .text-secondary {
   color: #eece1a; }
@@ -355,6 +350,42 @@ main {
   color: #fff; }
 
 @media screen and (max-width: 500px) {
+  .navbar {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    font-size: 1rem;
+    background-color: #333; }
+  .menu-btn {
+    top: 0;
+    right: 0;
+    display: block;
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border-bottom: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4; }
+    .menu-btn .line1 {
+      margin-top: 0; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .line1 {
+        background-color: red;
+        transform: rotate(45deg) translate(48px, 48px); }
+      .menu-btn.close .line3 {
+        background-color: black;
+        transform: rotate(-45deg) translate(-48px, -48px); }
+    .menu-btn .btn-line {
+      display: block;
+      width: 17px;
+      height: 1px;
+      margin-right: 16px;
+      margin-left: 15px; }
   main {
     align-items: center;
     text-align: center;
