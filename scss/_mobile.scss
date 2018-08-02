@@ -81,7 +81,7 @@
     width: 100%;
     height: 3rem;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     // font-size: 1rem;
     // color: set-text-color($primary-color);
     // background-color: #000000 !important;
@@ -104,6 +104,29 @@
   }
   // It ends here
 
+  .logo-container {
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 0;
+    overflow: auto;
+    position: absolute;
+    // background: url("../img/favicon-32x32.png");
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+    .logo {
+      position: absolute;
+      top: 6px;
+      left: 16.805px;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+
   .menu-btn {
     top: 0;
     right: 0;
@@ -115,28 +138,28 @@
     -webkit-tap-highlight-color: transparent;
     z-index: 4;
     // experiment
-    overflow: hidden;
-    position: fixed;
+    overflow: auto;
+    position: absolute;
     // opacity: 1;
 
     .line1 {
       // margin-top: 19.5px; //19.5px
       position: absolute; // no
-      top: 15px; // no
+      // top: 15px; // no
       top: 17.5px;
     }
 
     .line2 {
       margin: 0 auto; // no
       // text-align: center; //no
-      top: 20px; // no
+      // top: 20px; // no
       top: 22.5px;
       position: absolute;
     }
 
     .line3 {
       position: absolute; // no
-      top: 25px;
+      // top: 25px;
       top: 27.5px;
     }
 
@@ -222,7 +245,9 @@
   }
 
   h1 {
-    padding-top: 5vh;
+    // padding-top: 5vh; //brad
+    // padding-top: 3.25rem; //apple
+    padding-top: 2.5rem; //perfect
   }
 
   .item1 {

@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
+$home-image: url("../img/background.jpg");
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -14,6 +14,10 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      // height: 100%;
+      // width: 100%;
+      //
+      // transform: translate3d(0, 0, 0);
 
       &:after {
         content: "";
@@ -25,6 +29,8 @@ $background-opacity: 0.9;
         height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
+        //
+        // transform: translate3d(0, 0, 0);
       }
     }
   }
