@@ -69,7 +69,8 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: $primary-color, $amount: 5);
+    background: darken($color: $primary-color, $amount: 5); //brad
+    // background: rgba(51, 51, 51); //phone
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut();
@@ -81,7 +82,9 @@
   }
 
   &-branding {
-    background: $primary-color;
+    background: $primary-color; //brad
+    // background: darken($color: $primary-color, $amount: 5);
+    // background: rgba(51, 51, 51); //phone
     transform: translate3d(0, 100%, 0);
     @include easeOut();
 

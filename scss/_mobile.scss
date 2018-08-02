@@ -86,8 +86,8 @@
     // color: set-text-color($primary-color);
     // background-color: #000000 !important;
     // background-color: #333;
-    background: rgba(0, 0, 0, 0.8);
-
+    // background: rgba(0, 0, 0, 0.8); // Apple's navbar color
+    background: rgba(51, 51, 51, 0.8);
     // opacity: 0.1;
     // padding: 0.5rem 1rem;
     //
@@ -123,32 +123,71 @@
       // margin-top: 19.5px; //19.5px
       position: absolute; // no
       top: 15px; // no
+      top: 17.5px;
     }
 
     .line2 {
       margin: 0 auto; // no
-      text-align: center; //no
+      // text-align: center; //no
       top: 20px; // no
+      top: 22.5px;
       position: absolute;
     }
 
     .line3 {
       position: absolute; // no
       top: 25px;
+      top: 27.5px;
     }
 
     &.close {
-      transform: rotate(180deg);
+      /* // transform: rotate(180deg);
       .line1 {
         background-color: red;
-        // margin: 0;
-        // transform: rotate(45deg) translate(6px, 5px);
-        transform: rotate(45deg) translate(48px, 48px);
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
       }
       .line3 {
         background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);
-        transform: rotate(-45deg) translate(-48px, -48px);
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          // transform: rotate(45deg) translate(6px, 5px); //correctone
+          // transform: rotate(45deg) translate(4.5px, 3px); // finalValue
+          transform: rotate(45deg) translate(4px, 3px); // Using
+          // background-color: $secondary-color;
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+          //background: rgba(255, 255, 255, 0);
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          //transform: rotate(-45deg) translate(6.2px, -4.1px;//correctone
+          // transform: rotate(-45deg) translate(-4px, 6px);
+          // transform: rotate(-45deg) translate(13px, 6px);
+          // transform: rotate(-45deg) translate(4.5px, 6px); //x-correct
+
+          // transform: rotate(-45deg) translate(4.5px, 6px); //top
+          // transform: rotate(-45deg) translate(4.5px, -11px); // bottom
+          // transform: rotate(-45deg) translate(4.5px, -2.5px); //yperferct
+          // transform: rotate(-45deg) translate(3.5px, -2.5px);
+          // transform: rotate(-45deg) translate(4px, -2.5px);//finalValue
+          transform: rotate(-50deg) translate(4px, -2.5px); //Using
+          // background-color: $secondary-color;
+        }
       }
     }
 
@@ -156,6 +195,8 @@
       // display: block;
       width: 17px;
       height: 1px;
+      left: 15.5px;
+      margin: 0;
       // margin-right: 16px; works
       // margin-left: 15px; works
       // margin-bottom: 2px;
@@ -174,8 +215,10 @@
 
   #main-footer {
     // height: 30px;
+    color: #888;
     height: 25px;
     margin-bottom: 0.5rem;
+    // background: rgba(51, 51, 51, 0.8);
   }
 
   h1 {
@@ -198,6 +241,8 @@
           width: 100%;
           min-height: 0;
           height: 30vh;
+          // background: darken($color: $primary-color, $amount: 5);
+          // background: rgba(51, 51, 51)
           transform: translate3d(100%, 0, 0);
 
           &.show {
@@ -222,6 +267,7 @@
           width: 100%;
           min-height: 0;
           height: 70vh;
+          // background: rgba(51, 51, 51);
           justify-content: flex-start;
           // justify-content: center;
           transform: translate3d(-100%, 0, 0);
