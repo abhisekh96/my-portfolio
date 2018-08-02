@@ -73,45 +73,68 @@
   // My Experiment
   .navbar {
     // position: absolute; correct one, don't touch
-    z-index: 3; // comment this one
-    position: fixed; // absolute
+    // z-index: 1; // comment this one
+    position: absolute; // absolute
     // display: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 3rem;
     margin: 0;
-    font-size: 1rem;
+    overflow: hidden;
+    // font-size: 1rem;
     // color: set-text-color($primary-color);
     // background-color: #000000 !important;
-    background-color: #333;
-    // background: rgba(0, 0, 0, 0.8);
+    // background-color: #333;
+    background: rgba(0, 0, 0, 0.8);
 
-    // opacity: 0.5;
+    // opacity: 0.1;
     // padding: 0.5rem 1rem;
+    //
+    // &.hide {
+    //   visibility: hidden;
+    // }
+    // -webkit-backdrop-filter: saturate(180%) blur(100px);
+    // backdrop-filter: saturate(180%) blur(20px);
+    // -webkit-filter: blur(5px);
+    // -moz-filter: blur(5px);
+    // -o-filter: blur(5px);
+    // -ms-filter: blur(5px);
+    // filter: blur(20px);
   }
   // It ends here
 
   .menu-btn {
     top: 0;
     right: 0;
-    display: block;
-    position: fixed;
+    // display: block;
+    // position: fixed; //correct one
     height: 3rem;
     width: 3rem;
-    border-bottom: none;
+    // border-bottom: none;
     -webkit-tap-highlight-color: transparent;
     z-index: 4;
+    // experiment
+    overflow: hidden;
+    position: fixed;
+    // opacity: 1;
 
     .line1 {
-      margin-top: 0; //19.5px
-      // top: 20vh;
+      // margin-top: 19.5px; //19.5px
+      position: absolute; // no
+      top: 15px; // no
     }
 
     .line2 {
+      margin: 0 auto; // no
+      text-align: center; //no
+      top: 20px; // no
+      position: absolute;
     }
 
     .line3 {
+      position: absolute; // no
+      top: 25px;
     }
 
     &.close {
@@ -130,14 +153,15 @@
     }
 
     .btn-line {
-      display: block;
+      // display: block;
       width: 17px;
       height: 1px;
-      margin-right: 16px;
-      margin-left: 15px;
+      // margin-right: 16px; works
+      // margin-left: 15px; works
       // margin-bottom: 2px;
       // border-radius: 50%;
       // position: fixed;
+      // experiment
     }
   }
 

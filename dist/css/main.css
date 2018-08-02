@@ -56,10 +56,47 @@
       height: 250px;
       width: 250px;
       background: url("../img/abhisek4.jpg");
+      /* background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1)
+        ),
+        url("../img/abhisek4.jpg");
+      background-image: -moz-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1)
+        ),
+        url("../img/abhisek4.jpg");
+      background-image: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1)
+        ),
+        url("../img/abhisek4.jpg");
+      background-image: -ms-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1)
+        ),
+        url("../img/abhisek4.jpg");
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 1)),
+          to(rgba(0, 0, 0, 1))
+        ),
+        url("../img/abhisek4.jpg");
+      background-image: -webkit-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1)
+        ),
+        url("../img/abhisek4.jpg"); */
       background-position: center;
       border-radius: 50%;
       border: solid 3px #eece1a;
-      opacity: 1;
       transform: translate3d(0, 600px, 0);
       transition: all 0.5s ease-out; }
       .menu-branding .portrait.show {
@@ -130,6 +167,11 @@ h2 {
 a {
   color: #fff;
   text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
 
 .text-secondary {
   color: #eece1a; }
@@ -351,27 +393,34 @@ main {
 
 @media screen and (max-width: 500px) {
   .navbar {
-    z-index: 3;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 3rem;
     margin: 0;
-    font-size: 1rem;
-    background-color: #333; }
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8); }
   .menu-btn {
     top: 0;
     right: 0;
-    display: block;
-    position: fixed;
     height: 3rem;
     width: 3rem;
-    border-bottom: none;
     -webkit-tap-highlight-color: transparent;
-    z-index: 4; }
+    z-index: 4;
+    overflow: hidden;
+    position: fixed; }
     .menu-btn .line1 {
-      margin-top: 0; }
+      position: absolute;
+      top: 15px; }
+    .menu-btn .line2 {
+      margin: 0 auto;
+      text-align: center;
+      top: 20px;
+      position: absolute; }
+    .menu-btn .line3 {
+      position: absolute;
+      top: 25px; }
     .menu-btn.close {
       transform: rotate(180deg); }
       .menu-btn.close .line1 {
@@ -381,11 +430,8 @@ main {
         background-color: black;
         transform: rotate(-45deg) translate(-48px, -48px); }
     .menu-btn .btn-line {
-      display: block;
       width: 17px;
-      height: 1px;
-      margin-right: 16px;
-      margin-left: 15px; }
+      height: 1px; }
   main {
     align-items: center;
     text-align: center;
