@@ -1,19 +1,19 @@
-// Widescreens
-@include mediaXl {
+// Desktops & Laptops
+@include mediaLg {
   // .projects {
   //   grid-template-columns: repeat(4, 1fr);
   // }
 }
 
-// Desktops & Laptops
-@include mediaLg {
+// Tablets in portrait & landscape
+@include mediaMd {
   // .projects {
   //   grid-template-columns: repeat(3, 1fr);
   // }
 }
 
-// Tablets & Small Laptops
-@include mediaMd {
+// Smartphone in Landscape
+@include mediaSmL {
   // main {
   //   align-items: center;
   //   text-align: center;
@@ -66,10 +66,518 @@
   // .projects {
   //   grid-template-columns: repeat(2, 1fr);
   // }
+
+  // My code starts here
+  .navbar {
+    // position: absolute; correct one, don't touch
+    // z-index: 1; // comment this one
+    position: absolute; // absolute
+    // display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    // font-size: 1rem;
+    // color: set-text-color($primary-color);
+    // background-color: #000000 !important;
+    // background-color: #333;
+    // background: rgba(0, 0, 0, 0.8); // Apple's navbar color
+    background: rgba(51, 51, 51, 0.8);
+    // opacity: 0.1;
+    // padding: 0.5rem 1rem;
+    //
+    // &.hide {
+    //   visibility: hidden;
+    // }
+    // -webkit-backdrop-filter: saturate(180%) blur(100px);
+    // backdrop-filter: saturate(180%) blur(20px);
+    // -webkit-filter: blur(5px);
+    // -moz-filter: blur(5px);
+    // -o-filter: blur(5px);
+    // -ms-filter: blur(5px);
+    // filter: blur(20px);
+  }
+  // It ends here
+
+  .logo-container {
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+    // background: url("../img/favicon-32x32.png");
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+    .logo {
+      position: absolute;
+      // z-index: 4;
+      top: 6px;
+      left: 16.805px;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+
+  .menu-btn {
+    top: 0;
+    right: 0;
+    // display: block;
+    // position: fixed; //correct one
+    height: 3rem;
+    width: 3rem;
+    // border-bottom: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    // experiment
+    overflow: hidden;
+    position: absolute;
+    // opacity: 1;
+
+    .line1 {
+      // margin-top: 19.5px; //19.5px
+      position: absolute; // no
+      // top: 15px; // no
+      top: 17.5px;
+    }
+
+    .line2 {
+      margin: 0 auto; // no
+      // text-align: center; //no
+      // top: 20px; // no
+      top: 22.5px;
+      position: absolute;
+    }
+
+    .line3 {
+      position: absolute; // no
+      // top: 25px;
+      top: 27.5px;
+    }
+
+    &.close {
+      /* // transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          // transform: rotate(45deg) translate(6px, 5px); //correctone
+          // transform: rotate(45deg) translate(4.5px, 3px); // finalValue
+          transform: rotate(45deg) translate(4px, 3px); // Using
+          // background-color: $secondary-color;
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+          //background: rgba(255, 255, 255, 0);
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          //transform: rotate(-45deg) translate(6.2px, -4.1px;//correctone
+          // transform: rotate(-45deg) translate(-4px, 6px);
+          // transform: rotate(-45deg) translate(13px, 6px);
+          // transform: rotate(-45deg) translate(4.5px, 6px); //x-correct
+
+          // transform: rotate(-45deg) translate(4.5px, 6px); //top
+          // transform: rotate(-45deg) translate(4.5px, -11px); // bottom
+          // transform: rotate(-45deg) translate(4.5px, -2.5px); //yperferct
+          // transform: rotate(-45deg) translate(3.5px, -2.5px);
+          // transform: rotate(-45deg) translate(4px, -2.5px);//finalValue
+          transform: rotate(-50deg) translate(4px, -2.5px); //Using
+          // background-color: $secondary-color;
+        }
+      }
+    }
+
+    .btn-line {
+      // display: block;
+      width: 17px;
+      height: 1px;
+      left: 15.5px;
+      margin: 0;
+      // margin-right: 16px; works
+      // margin-left: 15px; works
+      // margin-bottom: 2px;
+      // border-radius: 50%;
+      // position: fixed;
+      // experiment
+    }
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  #main-footer {
+    // height: 30px;
+    color: #888;
+    height: 25px;
+    margin-bottom: 0.5rem;
+    // background: rgba(51, 51, 51, 0.8);
+  }
+
+  h1 {
+    // padding-top: 5vh; //brad
+    // padding-top: 3.25rem; //apple
+    padding-top: 2.5rem; //perfect
+  }
+
+  .item1 {
+    margin-top: 11vh;
+  }
+
+  // Menu Page
+  body {
+    header {
+      // .menu-btn {
+      // }
+
+      .menu {
+        .menu-branding {
+          // float: none;
+          // width: 100%;
+          // min-height: 0;
+          // height: 30vh;
+          // background: darken($color: $primary-color, $amount: 5);
+          // background: rgba(51, 51, 51)
+          justify-content: flex-start;
+          transform: translate3d(0, 100%, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .portrait {
+            margin-top: 19vh;
+            top: 10px;
+            height: 150px;
+            width: 150px;
+            background: url("../img/abhisek_portrait_small.jpg");
+            background-position: center;
+            transform: translate3d(0, 100%, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+
+        .menu-nav {
+          // float: none;
+          // width: 100%;
+          // min-height: 0;
+          // height: 70vh;
+          // background: rgba(51, 51, 51);
+          // justify-content: flex-start;
+          justify-content: flex-start;
+          transform: translate3d(0, -100%, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .nav-item {
+            // height: 1vh;
+            transform: translate3d(600px, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+
+            .nav-link {
+              font-weight: bold;
+              padding: 0.5rem;
+              font-size: 1.5rem;
+
+              &:hover {
+                color: set-text-color($primary-color);
+              }
+            }
+
+            &.current > a:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Home Page
+  #home {
+    .smlheading {
+      margin-top: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    a {
+      font-size: 1rem;
+      padding: 0.2rem;
+
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Me Page
+  .about-body {
+    line-height: 1.5;
+
+    #main-footer {
+      font-weight: 400;
+    }
+  }
+
+  #about {
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      // margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      line-height: 1.2;
+    }
+
+    .container1 {
+      margin-bottom: 0rem;
+
+      .box1 {
+        flex-basis: 100%;
+        justify-content: center;
+
+        .bio-image {
+          // justify-content: center;
+          margin: auto;
+          background: url("../img/abhisek_portrait_small.jpg");
+          background-position: center;
+        }
+      }
+
+      .box2 {
+        flex-basis: 100%;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .bio-heading {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 1rem;
+        }
+
+        .bio-paragraph {
+          text-align: center;
+          font-weight: 400;
+          // margin-top: 0;
+          font-size: 1rem;
+          // padding-top: 0;
+          padding: 0;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .container2 {
+      justify-content: center;
+      align-items: center;
+
+      .container2box {
+        flex-basis: 100%;
+      }
+
+      .job {
+        // margin-bottom: 1rem;
+        // padding-bottom: 1rem;
+        // padding: 0;
+        border-bottom: none;
+        background: none;
+
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: center;
+          // padding: 0;
+          // margin: 0;
+        }
+      }
+
+      #list {
+        padding: 0;
+      }
+    }
+  }
+
+  // My Work Page
+  .work-body {
+    line-height: 1.5;
+
+    #work {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+
+        .item {
+          a {
+            font-weight: normal;
+
+            img:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+
+          .btn-dark {
+            margin-bottom: 0;
+          }
+
+          .btn-light:hover {
+            background: lighten($color: $primary-color, $amount: 50);
+            color: #333;
+          }
+
+          .btn-dark:hover {
+            background: darken($primary-color, 50);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+
+  // Contact Me Page
+  .contact-body {
+    line-height: 1.5;
+
+    #contact {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .boxes {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+
+        div {
+          flex-basis: 100%;
+          font-weight: normal;
+          margin-bottom: 1rem;
+          // padding: 0.5rem 1rem;
+          padding: 0.4rem 0.9rem;
+          text-align: left;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+          }
+
+          &:hover {
+            margin-bottom: 1rem;
+            // padding: 0.5rem 1rem;
+            padding: 0.4rem 0.9rem;
+            background: none;
+            color: set-text-color($primary-color);
+            span {
+              color: $secondary-color;
+            }
+            #map {
+              color: #dd4a40;
+            }
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
 }
 
-// Smartphones
-@include mediaSm {
+// Smartphones in portrait
+@include mediaSmP {
   // My Experiment
   .navbar {
     // position: absolute; correct one, don't touch
@@ -304,7 +812,7 @@
 
           .nav-item {
             // height: 1vh;
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-600px, 0, 0);
 
             &.show {
               transform: translate3d(0, 0, 0);
