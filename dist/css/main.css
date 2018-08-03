@@ -36,7 +36,7 @@
     height: 100vh;
     width: 50%;
     float: left;
-    overflow: auto; }
+    overflow: hidden; }
   .menu-nav {
     margin: 0;
     padding: 0;
@@ -164,7 +164,11 @@ body {
 h1,
 h2 {
   margin: 0;
-  font-weight: 100; }
+  font-weight: 100;
+  /* &.sm-heading {
+    // margin-bottom: 2rem;
+    //background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
+  } */ }
   h1.lg-heading,
   h2.lg-heading {
     font-size: 6rem; }
@@ -404,7 +408,7 @@ main {
     width: 100%;
     height: 3rem;
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
     background: rgba(51, 51, 51, 0.8); }
   .logo-container {
     top: 0;
@@ -412,8 +416,8 @@ main {
     height: 3rem;
     width: 3rem;
     -webkit-tap-highlight-color: transparent;
-    z-index: 0;
-    overflow: auto;
+    z-index: 4;
+    overflow: hidden;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -431,7 +435,7 @@ main {
     width: 3rem;
     -webkit-tap-highlight-color: transparent;
     z-index: 4;
-    overflow: auto;
+    overflow: hidden;
     position: absolute; }
     .menu-btn .line1 {
       position: absolute;
@@ -559,7 +563,7 @@ main {
       padding-top: 0;
       padding-bottom: 0; }
       #about .container1 .box2 .bio-heading {
-        text-align: center;
+        text-align: left;
         font-weight: bold;
         font-size: 1.25rem;
         margin-bottom: 0;
@@ -580,7 +584,7 @@ main {
       border-bottom: none;
       background: none; }
       #about .container2 .job h3 {
-        text-align: center;
+        text-align: left;
         font-weight: bold;
         font-size: 1.25rem;
         margin-bottom: 0;
