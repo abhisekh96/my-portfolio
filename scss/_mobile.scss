@@ -7,9 +7,244 @@
 
 // Tablets in portrait & landscape
 @include mediaMd {
-  // .projects {
-  //   grid-template-columns: repeat(3, 1fr);
-  // }
+  // Common to every page
+
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+  }
+  // Menupage
+  .menu {
+    .menu-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: normal;
+          &:hover {
+            color: set-text-color($primary-color);
+          }
+        }
+        &.current > a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  // Homepage
+  #home {
+    text-align: center;
+    line-height: 1.5;
+
+    h1 {
+      font-weight: bold;
+      line-height: 1;
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    .mdheading {
+      margin-top: 30vh;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .noHover {
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .container1 {
+      margin-bottom: 2rem;
+
+      .box1 {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+        .bio-image {
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .tab-image {
+          margin-right: 0;
+        }
+      }
+
+      .box2 {
+        flex: 3;
+
+        .bio-heading {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+
+        .bio-paragraph {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .container2 {
+      .container2box {
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 2.5rem;
+
+        h3 {
+          margin: 1rem 0;
+          font-weight: bold;
+        }
+
+        #list {
+          margin-top: 0;
+          margin-bottom: 1rem;
+
+          li {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    font-weight: bold;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      .item {
+        a {
+          font-weight: normal;
+          img {
+            &:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+        }
+
+        .btn-light:hover {
+          background: lighten($color: $primary-color, $amount: 50);
+          color: #333;
+        }
+
+        .btn-dark:hover {
+          background: darken($primary-color, 50);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .boxes {
+      font-weight: normal;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      div {
+        font-weight: normal;
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        span {
+          font-weight: bold;
+        }
+
+        &:hover {
+          // margin-bottom: 1rem;
+          // padding: 0.5rem 1rem;
+          // padding: 0.4rem 0.9rem;
+          padding: 1rem 2rem;
+          margin-bottom: 2rem;
+          background: none;
+          color: set-text-color($primary-color);
+          span {
+            color: $secondary-color;
+          }
+          #map {
+            color: #dd4a40;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+    font-weight: normal;
+  }
 }
 
 // Smartphone in Landscape
@@ -246,6 +481,11 @@
     // padding-top: 5vh; //brad
     // padding-top: 3.25rem; //apple
     padding-top: 2.5rem; //perfect
+    line-height: 1.2;
+  }
+
+  h2 {
+    line-height: 1.2;
   }
 
   .item1 {
@@ -333,6 +573,7 @@
   #home {
     .smlheading {
       margin-top: 1rem;
+      line-height: 1.2;
     }
     h1 {
       font-size: 2.5rem;
@@ -757,6 +998,10 @@
     // padding-top: 5vh; //brad
     // padding-top: 3.25rem; //apple
     padding-top: 2.5rem; //perfect
+  }
+
+  .smlheading {
+    line-height: 1.2;
   }
 
   .item1 {
