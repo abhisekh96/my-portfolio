@@ -1,8 +1,420 @@
+//
+@include mediaXl {
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+
+    .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      // background: url("../img/favicon-32x32.png");
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+
+      .logo {
+        position: absolute;
+        // z-index: 4;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+
+    .menu-btn {
+      top: 0;
+      right: 0;
+      // display: block;
+      // position: fixed; //correct one
+      height: 3rem;
+      width: 3rem;
+      // border-bottom: none;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      // experiment
+      overflow: hidden;
+      position: absolute;
+      // opacity: 1;
+
+      .line1 {
+        // margin-top: 19.5px; //19.5px
+        position: absolute; // no
+        // top: 15px; // no
+        top: 17.5px;
+      }
+
+      .line2 {
+        margin: 0 auto; // no
+        // text-align: center; //no
+        // top: 20px; // no
+        top: 22.5px;
+        position: absolute;
+      }
+
+      .line3 {
+        position: absolute; // no
+        // top: 25px;
+        top: 27.5px;
+      }
+
+      &.close {
+        /* // transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            // transform: rotate(45deg) translate(6px, 5px); //correctone
+            // transform: rotate(45deg) translate(4.5px, 3px); // finalValue
+            transform: rotate(45deg) translate(4px, 3px); // Using
+            // background-color: $secondary-color;
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+            //background: rgba(255, 255, 255, 0);
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            //transform: rotate(-45deg) translate(6.2px, -4.1px;//correctone
+            // transform: rotate(-45deg) translate(-4px, 6px);
+            // transform: rotate(-45deg) translate(13px, 6px);
+            // transform: rotate(-45deg) translate(4.5px, 6px); //x-correct
+
+            // transform: rotate(-45deg) translate(4.5px, 6px); //top
+            // transform: rotate(-45deg) translate(4.5px, -11px); // bottom
+            // transform: rotate(-45deg) translate(4.5px, -2.5px); //yperferct
+            // transform: rotate(-45deg) translate(3.5px, -2.5px);
+            // transform: rotate(-45deg) translate(4px, -2.5px);//finalValue
+            transform: rotate(-50deg) translate(4px, -2.5px); //Using
+            // background-color: $secondary-color;
+          }
+        }
+      }
+
+      .btn-line {
+        // display: block;
+        width: 17px; //17
+        height: 1px; //1
+        left: 15.5px;
+        margin: 0;
+        // margin-right: 16px; works
+        // margin-left: 15px; works
+        // margin-bottom: 2px;
+        // border-radius: 50%;
+        // position: fixed;
+        // experiment
+      }
+    }
+  }
+
+  // Menu Page
+
+  // Common
+  h1 {
+    padding-top: 2rem;
+  }
+
+  // Home Page
+  #home {
+    h1 {
+      line-height: 1.2;
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .container1 {
+      margin-bottom: 1rem;
+      .box1 {
+        flex: 1;
+        .bio-image {
+          margin: 0;
+        }
+      }
+      .box2 {
+        flex: 6;
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+  }
+}
+
 // Desktops & Laptops
 @include mediaLg {
   // .projects {
   //   grid-template-columns: repeat(4, 1fr);
   // }
+
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+
+    .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      // background: url("../img/favicon-32x32.png");
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+
+      .logo {
+        position: absolute;
+        // z-index: 4;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+
+    .menu-btn {
+      top: 0;
+      right: 0;
+      // display: block;
+      // position: fixed; //correct one
+      height: 3rem;
+      width: 3rem;
+      // border-bottom: none;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      // experiment
+      overflow: hidden;
+      position: absolute;
+      // opacity: 1;
+
+      .line1 {
+        // margin-top: 19.5px; //19.5px
+        position: absolute; // no
+        // top: 15px; // no
+        top: 17.5px;
+      }
+
+      .line2 {
+        margin: 0 auto; // no
+        // text-align: center; //no
+        // top: 20px; // no
+        top: 22.5px;
+        position: absolute;
+      }
+
+      .line3 {
+        position: absolute; // no
+        // top: 25px;
+        top: 27.5px;
+      }
+
+      &.close {
+        /* // transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            // transform: rotate(45deg) translate(6px, 5px); //correctone
+            // transform: rotate(45deg) translate(4.5px, 3px); // finalValue
+            transform: rotate(45deg) translate(4px, 3px); // Using
+            // background-color: $secondary-color;
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+            //background: rgba(255, 255, 255, 0);
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            //transform: rotate(-45deg) translate(6.2px, -4.1px;//correctone
+            // transform: rotate(-45deg) translate(-4px, 6px);
+            // transform: rotate(-45deg) translate(13px, 6px);
+            // transform: rotate(-45deg) translate(4.5px, 6px); //x-correct
+
+            // transform: rotate(-45deg) translate(4.5px, 6px); //top
+            // transform: rotate(-45deg) translate(4.5px, -11px); // bottom
+            // transform: rotate(-45deg) translate(4.5px, -2.5px); //yperferct
+            // transform: rotate(-45deg) translate(3.5px, -2.5px);
+            // transform: rotate(-45deg) translate(4px, -2.5px);//finalValue
+            transform: rotate(-50deg) translate(4px, -2.5px); //Using
+            // background-color: $secondary-color;
+          }
+        }
+      }
+
+      .btn-line {
+        // display: block;
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0;
+        // margin-right: 16px; works
+        // margin-left: 15px; works
+        // margin-bottom: 2px;
+        // border-radius: 50%;
+        // position: fixed;
+        // experiment
+      }
+    }
+  }
+
+  // Menu Page
+
+  // Common
+  h1 {
+    padding-top: 2rem;
+  }
+
+  // Home Page
+  #home {
+    h1 {
+      line-height: 1.2;
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .container1 {
+      .box1 {
+        flex: 1;
+        .bio-image {
+          margin: 0;
+        }
+      }
+      .box2 {
+        flex: 4;
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .boxes {
+      div {
+        padding: 1rem 2rem;
+        flex-basis: 100%;
+      }
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+  }
 }
 
 // Tablets in portrait & landscape
@@ -323,6 +735,10 @@
       font-weight: bold;
       line-height: 1.2;
       text-align: center;
+    }
+
+    .bold-text {
+      font-weight: bold;
     }
 
     span {
@@ -708,11 +1124,14 @@
     h1 {
       font-size: 2.5rem;
       font-weight: bold;
+      line-height: 1;
+      padding-bottom: 1rem;
     }
 
     h2 {
       font-size: 1.2rem;
       font-weight: bold;
+      line-height: 1.2;
     }
 
     a {
@@ -1217,11 +1636,14 @@
     h1 {
       font-size: 2.5rem;
       font-weight: bold;
+      line-height: 1;
+      padding-bottom: 1rem;
     }
 
     h2 {
       font-size: 1.2rem;
       font-weight: bold;
+      line-height: 1.2;
     }
 
     a {

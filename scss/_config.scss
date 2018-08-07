@@ -73,26 +73,35 @@ $background-opacity: 0.9;
 
 // Bootstrap media queries
 @mixin mediaSmP {
-  @media screen and (max-width: 480px) and (orientation: portrait) {
+  // @media screen and (max-width: 480px) and (orientation: portrait) { //correct
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
 
 @mixin mediaSmL {
-  @media screen and (max-width: 640px) and (orientation: landscape) {
+  // @media screen and (max-width: 640px) and (orientation: landscape) { //correct
+  @media screen and (min-width: 481px) and (max-width: 767px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  // @media screen and (min-width: 768px) and (max-width: 1024px) { //correct
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    //correct
+    // @media screen and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
