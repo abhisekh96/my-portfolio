@@ -213,7 +213,7 @@ header {
 main {
   padding: 3rem;
   padding-bottom: 1rem;
-  min-height: calc(100vh - 40px); }
+  min-height: calc(100vh - 30px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
