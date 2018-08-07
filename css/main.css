@@ -424,6 +424,208 @@ main {
   font-weight: 100;
   color: #fff; }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8); }
+    .navbar .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem; }
+      .navbar .logo-container .logo {
+        position: absolute;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal; }
+    .navbar .menu-btn {
+      top: 0;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute; }
+      .navbar .menu-btn .line1 {
+        position: absolute;
+        top: 17.5px; }
+      .navbar .menu-btn .line2 {
+        margin: 0 auto;
+        top: 22.5px;
+        position: absolute; }
+      .navbar .menu-btn .line3 {
+        position: absolute;
+        top: 27.5px; }
+      .navbar .menu-btn.close {
+        /* // transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+        transform: rotate(180deg); }
+        .navbar .menu-btn.close .btn-line:nth-child(1) {
+          transform: rotate(45deg) translate(4px, 3px); }
+        .navbar .menu-btn.close .btn-line:nth-child(2) {
+          opacity: 0; }
+        .navbar .menu-btn.close .btn-line:nth-child(3) {
+          transform: rotate(-50deg) translate(4px, -2.5px); }
+      .navbar .menu-btn .btn-line {
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0; }
+  .menu .menu-nav .nav-item .nav-link {
+    font-weight: normal; }
+    .menu .menu-nav .nav-item .nav-link:hover {
+      color: #fff; }
+  .menu .menu-nav .nav-item.current > a:hover {
+    color: #eece1a; }
+  h1 {
+    padding-top: 1rem; }
+  #home {
+    text-align: center;
+    line-height: 1.5; }
+    #home h1 {
+      font-weight: bold;
+      line-height: 1;
+      font-size: 5rem;
+      margin-bottom: 1rem; }
+    #home span {
+      font-weight: bold; }
+    #home .mdheading {
+      margin-top: 30vh; }
+    #home h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1; }
+    #home .noHover:hover {
+      color: #fff; }
+  #about h1 {
+    text-align: center;
+    font-weight: bold; }
+  #about span {
+    font-weight: bold; }
+  #about h2 {
+    text-align: center;
+    font-weight: bold; }
+  #about .container1 {
+    margin-bottom: 2rem; }
+    #about .container1 .box1 {
+      flex: 1;
+      align-items: center;
+      justify-content: center; }
+      #about .container1 .box1 .bio-image {
+        margin: 0;
+        align-items: center;
+        justify-content: center; }
+      #about .container1 .box1 .tab-image {
+        margin-right: 0; }
+    #about .container1 .box2 {
+      flex: 3; }
+      #about .container1 .box2 .bio-heading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold; }
+      #about .container1 .box2 .bio-paragraph {
+        font-weight: normal; }
+  #about .container2 .container2box {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 2.5rem; }
+    #about .container2 .container2box h3 {
+      margin: 1rem 0;
+      font-weight: bold; }
+    #about .container2 .container2box #list {
+      margin-top: 0;
+      margin-bottom: 1rem; }
+      #about .container2 .container2box #list li {
+        font-weight: normal; }
+  #work {
+    font-weight: bold; }
+    #work h1 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2; }
+    #work h2 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 2rem; }
+    #work .projects {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem; }
+      #work .projects .item a {
+        font-weight: normal; }
+        #work .projects .item a img:hover {
+          opacity: 1;
+          border-color: #fff; }
+      #work .projects .item .btn-light:hover {
+        background: #c4c4c4;
+        color: #333; }
+      #work .projects .item .btn-dark:hover {
+        background: black;
+        color: #fff; }
+  #contact h1 {
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center; }
+  #contact span {
+    font-weight: bold; }
+  #contact h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 2rem; }
+  #contact .boxes {
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; }
+    #contact .boxes div {
+      font-weight: normal;
+      flex-basis: 100%;
+      text-align: left;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem; }
+      #contact .boxes div span {
+        font-weight: bold; }
+      #contact .boxes div:hover {
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        background: none;
+        color: #fff; }
+        #contact .boxes div:hover span {
+          color: #eece1a; }
+        #contact .boxes div:hover #map {
+          color: #dd4a40; }
+  #main-footer {
+    color: #888;
+    font-weight: normal; } }
+
 @media screen and (max-width: 640px) and (orientation: landscape) {
   .navbar {
     position: absolute;
@@ -508,7 +710,10 @@ main {
     height: 25px;
     margin-bottom: 0.5rem; }
   h1 {
-    padding-top: 2.5rem; }
+    padding-top: 2.5rem;
+    line-height: 1.2; }
+  h2 {
+    line-height: 1.2; }
   .item1 {
     margin-top: 11vh; }
   body header .menu .menu-branding {
@@ -544,7 +749,8 @@ main {
       body header .menu .menu-nav .nav-item.current > a:hover {
         color: #eece1a; }
   #home .smlheading {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    line-height: 1.2; }
   #home h1 {
     font-size: 2.5rem;
     font-weight: bold; }
@@ -769,6 +975,8 @@ main {
     margin-bottom: 0.5rem; }
   h1 {
     padding-top: 2.5rem; }
+  .smlheading {
+    line-height: 1.2; }
   .item1 {
     margin-top: 14vh; }
   body header .menu .menu-branding {
