@@ -1,27 +1,3 @@
-/* // Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin mediaMd {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXl {
-  @media screen and (min-width: 1171px) {
-    @content;
-  }
-} */
 .menu-btn {
   position: fixed;
   z-index: 3;
@@ -80,44 +56,6 @@
       height: 250px;
       width: 250px;
       background: url("../img/abhisek4.jpg");
-      /* background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -moz-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -o-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -ms-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -webkit-gradient(
-          linear,
-          left top,
-          left bottom,
-          from(rgba(0, 0, 0, 1)),
-          to(rgba(0, 0, 0, 1))
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -webkit-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg"); */
       background-position: center;
       border-radius: 50%;
       border: solid 3px #eece1a;
@@ -188,11 +126,7 @@ body {
 h1,
 h2 {
   margin: 0;
-  font-weight: bold;
-  /* &.sm-heading {
-    // margin-bottom: 2rem;
-    //background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
-  } */ }
+  font-weight: bold; }
   h1.lg-heading,
   h2.lg-heading {
     font-size: 6rem; }
@@ -295,46 +229,6 @@ main {
   padding: 0 1rem;
   padding-bottom: 0; }
 
-/* .about-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  .bio-image {
-    // grid-area: bioimage;
-    // height: 250px;
-    // width: 250px;
-    background-position: center;
-    margin: auto;
-    border-radius: 50%;
-    border: solid 3px $secondary-color;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($color: $primary-color, $amount: 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
-} */
 #work h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -473,20 +367,6 @@ main {
         position: absolute;
         top: 27.5px; }
       .navbar .menu-btn.close {
-        /* // transform: rotate(180deg);
-      .line1 {
-        background-color: red;
-        // transform: rotate(45deg) translate(6px, 5px); //correctone
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      .line2 {
-        opacity: 1;
-      }
-      .line3 {
-        background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
-        transform: rotate(-90deg) translate(10px, 10px);
-      } */
         transform: rotate(180deg); }
         .navbar .menu-btn.close .btn-line:nth-child(1) {
           transform: rotate(45deg) translate(4px, 3px); }
@@ -578,20 +458,6 @@ main {
         position: absolute;
         top: 27.5px; }
       .navbar .menu-btn.close {
-        /* // transform: rotate(180deg);
-      .line1 {
-        background-color: red;
-        // transform: rotate(45deg) translate(6px, 5px); //correctone
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      .line2 {
-        opacity: 1;
-      }
-      .line3 {
-        background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
-        transform: rotate(-90deg) translate(10px, 10px);
-      } */
         transform: rotate(180deg); }
         .navbar .menu-btn.close .btn-line:nth-child(1) {
           transform: rotate(45deg) translate(4px, 3px); }
@@ -711,20 +577,6 @@ main {
         position: absolute;
         top: 27.5px; }
       .navbar .menu-btn.close {
-        /* // transform: rotate(180deg);
-      .line1 {
-        background-color: red;
-        // transform: rotate(45deg) translate(6px, 5px); //correctone
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      .line2 {
-        opacity: 1;
-      }
-      .line3 {
-        background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
-        transform: rotate(-90deg) translate(10px, 10px);
-      } */
         transform: rotate(180deg); }
         .navbar .menu-btn.close .btn-line:nth-child(1) {
           transform: rotate(45deg) translate(4px, 3px); }
@@ -915,20 +767,6 @@ main {
       position: absolute;
       top: 27.5px; }
     .menu-btn.close {
-      /* // transform: rotate(180deg);
-      .line1 {
-        background-color: red;
-        // transform: rotate(45deg) translate(6px, 5px); //correctone
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      .line2 {
-        opacity: 1;
-      }
-      .line3 {
-        background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
-        transform: rotate(-90deg) translate(10px, 10px);
-      } */
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(4px, 3px); }
@@ -1182,20 +1020,6 @@ main {
       position: absolute;
       top: 27.5px; }
     .menu-btn.close {
-      /* // transform: rotate(180deg);
-      .line1 {
-        background-color: red;
-        // transform: rotate(45deg) translate(6px, 5px); //correctone
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      .line2 {
-        opacity: 1;
-      }
-      .line3 {
-        background-color: black;
-        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
-        transform: rotate(-90deg) translate(10px, 10px);
-      } */
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(4px, 3px); }

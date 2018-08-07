@@ -14,14 +14,9 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      // height: 100%;
-      // width: 100%;
-      //
-      // transform: translate3d(0, 0, 0);
 
       &:after {
         content: "";
-        // position: absolute; //Brad
         position: fixed;
         top: 0;
         right: 0;
@@ -29,8 +24,6 @@ $background-opacity: 0.9;
         height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
-        //
-        // transform: translate3d(0, 0, 0);
       }
     }
   }
@@ -45,35 +38,8 @@ $background-opacity: 0.9;
   }
 }
 
-// Brad's code
-/* // Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin mediaMd {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXl {
-  @media screen and (min-width: 1171px) {
-    @content;
-  }
-} */
-
 // Smartphones Portrait
 @mixin mediaSmP {
-  // @media screen and (max-width: 480px) and (orientation: portrait) { //correct
   @media screen and (max-width: 480px) {
     @content;
   }
@@ -81,7 +47,6 @@ $background-opacity: 0.9;
 
 // Smartphones Landscape
 @mixin mediaSmL {
-  // @media screen and (max-width: 640px) and (orientation: landscape) { //correct
   @media screen and (min-width: 481px) and (max-width: 767px) {
     @content;
   }
@@ -90,8 +55,6 @@ $background-opacity: 0.9;
 // Tablets Portrait
 @mixin mediaMd {
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    //correct
-    // @media screen and (max-width: 768px) {
     @content;
   }
 }

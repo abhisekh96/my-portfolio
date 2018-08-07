@@ -1,11 +1,9 @@
 //Menu Button
 .menu-btn {
-  //Brad's code
   position: fixed;
-  z-index: 3; //3
+  z-index: 3;
   right: 35px;
   top: 35px;
-  //Ends here
   cursor: pointer;
   @include easeOut();
 
@@ -30,7 +28,6 @@
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
-        //background: rgba(255, 255, 255, 0);
       }
 
       // Line 3 - Rotate
@@ -47,7 +44,6 @@
   top: 0;
   width: 100%;
   opacity: 0.95;
-  // background: rgba(0, 0, 0, 0);
   visibility: hidden;
 
   &.show {
@@ -69,8 +65,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: $primary-color, $amount: 5); //brad
-    // background: rgba(51, 51, 51); //phone
+    background: darken($color: $primary-color, $amount: 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut();
@@ -82,9 +77,7 @@
   }
 
   &-branding {
-    background: $primary-color; //brad
-    // background: darken($color: $primary-color, $amount: 5);
-    // background: rgba(51, 51, 51); //phone
+    background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut();
 
@@ -96,57 +89,14 @@
       height: 250px;
       width: 250px;
       background: url("../img/abhisek4.jpg");
-      //
-      /* background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -moz-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -o-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -ms-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -webkit-gradient(
-          linear,
-          left top,
-          left bottom,
-          from(rgba(0, 0, 0, 1)),
-          to(rgba(0, 0, 0, 1))
-        ),
-        url("../img/abhisek4.jpg");
-      background-image: -webkit-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1)
-        ),
-        url("../img/abhisek4.jpg"); */
-
-      //
       background-position: center;
       border-radius: 50%;
       border: solid 3px $secondary-color;
-      // opacity: 1;
       transform: translate3d(0, 600px, 0);
       @include easeOut();
       &.show {
         transform: translate3d(0, 0, 0);
       }
-      //background: rgba(255, 255, 255, 1);
     }
   }
 
@@ -168,7 +118,6 @@
     position: relative;
     font-size: 1.5rem;
     font-weight: normal;
-    // text-transform: uppercase;
     padding: 1rem 0;
     color: set-text-color($primary-color);
     text-decoration: none;
