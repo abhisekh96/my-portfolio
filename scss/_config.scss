@@ -71,7 +71,7 @@ $background-opacity: 0.9;
   }
 } */
 
-// Bootstrap media queries
+// Smartphones Portrait
 @mixin mediaSmP {
   // @media screen and (max-width: 480px) and (orientation: portrait) { //correct
   @media screen and (max-width: 480px) {
@@ -79,6 +79,7 @@ $background-opacity: 0.9;
   }
 }
 
+// Smartphones Landscape
 @mixin mediaSmL {
   // @media screen and (max-width: 640px) and (orientation: landscape) { //correct
   @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -86,6 +87,7 @@ $background-opacity: 0.9;
   }
 }
 
+// Tablets Portrait
 @mixin mediaMd {
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     //correct
@@ -94,12 +96,14 @@ $background-opacity: 0.9;
   }
 }
 
+// Tablets Landscape
 @mixin mediaLg {
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     @content;
   }
 }
 
+// Desktops & Laptops
 @mixin mediaXl {
   @media screen and (min-width: 1280px) {
     @content;

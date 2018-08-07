@@ -1,4 +1,4 @@
-//
+// Desktops and Laptops
 @include mediaXl {
   // Navbar
   .navbar {
@@ -203,7 +203,7 @@
   }
 }
 
-// Desktops & Laptops
+// Tablets (Landscape)
 @include mediaLg {
   // .projects {
   //   grid-template-columns: repeat(4, 1fr);
@@ -348,6 +348,21 @@
   }
 
   // Menu Page
+  .menu {
+    .menu-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: normal;
+          &:hover {
+            color: set-text-color($primary-color);
+          }
+        }
+        &.current > a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
 
   // Common
   h1 {
@@ -358,6 +373,11 @@
   #home {
     h1 {
       line-height: 1.2;
+    }
+    .noHover {
+      &:hover {
+        color: set-text-color($primary-color);
+      }
     }
   }
 
@@ -390,6 +410,27 @@
     }
     .projects {
       grid-template-columns: repeat(3, 1fr);
+      .item {
+        a {
+          font-weight: normal;
+          img {
+            &:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+        }
+
+        .btn-light:hover {
+          background: lighten($color: $primary-color, $amount: 50);
+          color: #333;
+        }
+
+        .btn-dark:hover {
+          background: darken($primary-color, 50);
+          color: #fff;
+        }
+      }
     }
   }
 
@@ -404,6 +445,21 @@
       div {
         padding: 1rem 2rem;
         flex-basis: 100%;
+        &:hover {
+          // margin-bottom: 1rem;
+          // padding: 0.5rem 1rem;
+          // padding: 0.4rem 0.9rem;
+          padding: 1rem 2rem;
+          // margin-bottom: 2rem;
+          background: none;
+          color: set-text-color($primary-color);
+          span {
+            color: $secondary-color;
+          }
+          #map {
+            color: #dd4a40;
+          }
+        }
       }
     }
     .bold-text {
@@ -417,7 +473,7 @@
   }
 }
 
-// Tablets in portrait & landscape
+// Tablets Portrait
 @include mediaMd {
   // Common to every page
 
@@ -793,7 +849,7 @@
   }
 }
 
-// Smartphone in Landscape
+// Smartphone Landscape
 @include mediaSmL {
   // main {
   //   align-items: center;
@@ -1366,7 +1422,7 @@
   }
 }
 
-// Smartphones in portrait
+// Smartphones Portrait
 @include mediaSmP {
   // My Experiment
   .navbar {

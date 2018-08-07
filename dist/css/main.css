@@ -604,10 +604,18 @@ main {
         height: 1px;
         left: 15.5px;
         margin: 0; }
+  .menu .menu-nav .nav-item .nav-link {
+    font-weight: normal; }
+    .menu .menu-nav .nav-item .nav-link:hover {
+      color: #fff; }
+  .menu .menu-nav .nav-item.current > a:hover {
+    color: #eece1a; }
   h1 {
     padding-top: 2rem; }
   #home h1 {
     line-height: 1.2; }
+  #home .noHover:hover {
+    color: #fff; }
   #about h1 {
     margin-bottom: 0;
     line-height: 1;
@@ -624,6 +632,17 @@ main {
     padding-bottom: 1rem; }
   #work .projects {
     grid-template-columns: repeat(3, 1fr); }
+    #work .projects .item a {
+      font-weight: normal; }
+      #work .projects .item a img:hover {
+        opacity: 1;
+        border-color: #fff; }
+    #work .projects .item .btn-light:hover {
+      background: #c4c4c4;
+      color: #333; }
+    #work .projects .item .btn-dark:hover {
+      background: black;
+      color: #fff; }
   #contact h1 {
     margin-bottom: 0;
     line-height: 1;
@@ -631,6 +650,14 @@ main {
   #contact .boxes div {
     padding: 1rem 2rem;
     flex-basis: 100%; }
+    #contact .boxes div:hover {
+      padding: 1rem 2rem;
+      background: none;
+      color: #fff; }
+      #contact .boxes div:hover span {
+        color: #eece1a; }
+      #contact .boxes div:hover #map {
+        color: #dd4a40; }
   #contact .bold-text {
     font-weight: bold; }
   #main-footer {
