@@ -434,12 +434,78 @@ main {
     margin: 0;
     overflow: hidden;
     background: rgba(51, 51, 51, 0.8); }
+    .navbar .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem; }
+      .navbar .logo-container .logo {
+        position: absolute;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal; }
+    .navbar .menu-btn {
+      top: 0;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute; }
+      .navbar .menu-btn .line1 {
+        position: absolute;
+        top: 17.5px; }
+      .navbar .menu-btn .line2 {
+        margin: 0 auto;
+        top: 22.5px;
+        position: absolute; }
+      .navbar .menu-btn .line3 {
+        position: absolute;
+        top: 27.5px; }
+      .navbar .menu-btn.close {
+        /* // transform: rotate(180deg);
+      .line1 {
+        background-color: red;
+        // transform: rotate(45deg) translate(6px, 5px); //correctone
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2 {
+        opacity: 1;
+      }
+      .line3 {
+        background-color: black;
+        // transform: rotate(-45deg) translate(6.2px, -4.1px);//correctone
+        transform: rotate(-90deg) translate(10px, 10px);
+      } */
+        transform: rotate(180deg); }
+        .navbar .menu-btn.close .btn-line:nth-child(1) {
+          transform: rotate(45deg) translate(4px, 3px); }
+        .navbar .menu-btn.close .btn-line:nth-child(2) {
+          opacity: 0; }
+        .navbar .menu-btn.close .btn-line:nth-child(3) {
+          transform: rotate(-50deg) translate(4px, -2.5px); }
+      .navbar .menu-btn .btn-line {
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0; }
   .menu .menu-nav .nav-item .nav-link {
     font-weight: normal; }
     .menu .menu-nav .nav-item .nav-link:hover {
       color: #fff; }
   .menu .menu-nav .nav-item.current > a:hover {
     color: #eece1a; }
+  h1 {
+    padding-top: 1rem; }
   #home {
     text-align: center;
     line-height: 1.5; }
