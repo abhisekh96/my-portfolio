@@ -4,7 +4,7 @@ This is my portfolio website. It contains information about me, my education, sk
 
 ## Website link of my portfolio website
 
-[https://www.abhisekh96.github.io/my-portfolio](https://www.abhisekh96.github.io/my-portfolio)
+[https://abhisekh96.github.io/my-portfolio](https://abhisekh96.github.io/my-portfolio)
 
 ## Technologies used in this project
 
